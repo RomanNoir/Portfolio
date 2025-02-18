@@ -1,0 +1,64 @@
+// main: ../style.less
+
+.work {
+    border: 2px solid, @black;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+    
+    
+    
+    &:hover {
+        background-color: @black;
+        color: @white;
+    }
+}
+
+.work__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+    @media @tablet {
+        justify-content: center;
+    width: 100%;
+    }
+}
+
+
+.work__content {
+    padding: 1rem 0.8rem;
+}
+
+.work__cat {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    color: @black;
+}
+
+.work__title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.06rem;
+    Text-transform: uppercase;
+    font-weight: 700;
+}
+
+.pressy {
+    border: 2px solid, @black;
+    color: @black;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.66rem 2rem;
+        
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+        
+    &:hover {
+        background-color: @black;
+        cursor: pointer;
+        color: @white;
+        }
+    
+    
+}
+
+

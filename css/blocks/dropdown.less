@@ -1,0 +1,42 @@
+// main: ../style.less
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-button {
+    font-family: inherit;
+ display: block;
+ width: 100%;
+ padding: 1rem 1.8rem; 
+    color: @gray;
+ font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    border: 2px solid @black;
+    border-radius: none;
+    background-color: @white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    z-index: 10;
+}
+
+.dropdown-content .dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-content .dropdown-item:hover {
+    background: #f0f0f0;
+}
+
+.show {
+    display: block;
+}

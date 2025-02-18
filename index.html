@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js"></script>
+    <title>Portfolio</title>
+</head>
+<body class="no-scroll">
+
+
+
+
+<!---HEADER -->
+
+ <header class="header">
+     <div class="container">
+         <div class="header__inner">
+             <div class="user">
+             <div class="user__content">
+                 <div class="user__name">
+                     PORTFOLIO
+                 </div>
+                 <div class="user__prof">
+                     Montréal, QC
+                 </div>
+
+             </div>
+
+             </div>
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#projects">PROJECTS</a>
+                <a class="nav__link" href="#about">about me</a>
+                <a class="nav__link" href="#designservices">DESIGN SERVICES</a>
+                <a class="nav__link nav__link--btn" href="#" data-modal="modal_hire_me">hire</a>
+            </nav> 
+            
+            <button class="burger" type="button" id="navToggle">
+                <img class="burger__icon" src="burger.svg" alt="">
+            </button>
+         </div>
+     </div>
+ </header>
+ 
+  <!--END-->
+  
+  
+  
+  
+  
+  
+  <!---INTRO -->
+  
+   <section class="intro">
+       <div class="container">
+          
+           <div class="intro__inner">
+               <div class="intro__content">
+                   <h1 class="intro__subtitle"><span class="thin-italic">Hello, my name is</span><br><a class="intro__resume" href="pdf/Roman%20Noir%20-%20Multimedia%20Designer.pdf">Roman Noir</a></h1>
+                   <h2 class="intro__title">You can simply <u>CLICK</u> on my name to take a look on my resume</h2>
+                   <div class="intro__text"></div>
+               </div>
+           </div>
+           
+       </div>
+   </section>
+   
+    <!--END-->
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--Works-->
+    
+    
+    <div class="works">
+        <div class="container">
+           <div class="works__name" id="projects">PROJECTS</div>
+            <div class="works__nav">
+                <a class="works__nav-link" href="#" data-filter="ALL">ALL</a>
+                <a class="works__nav-link" href="#" data-filter="POSTERS">POSTERS</a>
+                <a class="works__nav-link" href="#" data-filter="ADVERTISEMENT">ADVERTISEMENT</a>
+                <a class="works__nav-link" href="#" data-filter="RETOUCH">RETOUCH</a>
+            </div>
+            <div class="portfolio">
+                <div class="portfolio__col" data-cat="POSTERS" data-modal="modal_project_1">
+                    <div class="work">
+                        <img class="work__image" src="3dws.png" alt="">
+                        <div class="work__content">
+                           <div class="work__cat">POSTERS</div>
+                            <div class="work__title">
+                                BEST SELLERS
+                                <time class="work__date" datetime="2022-11-22 19:00">2024</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="ADVERTISEMENT" data-modal="modal_project_2">
+                    <div class="work">
+                        <img class="work__image" src="dr%20martens%20cover.png" alt="">
+                        <div class="work__content">
+                           <div class="work__cat">ADVERTISEMENT</div>
+                            <div class="work__title">
+                                DR.MARTENS
+                                <time class="work__date" datetime="2022-11-22 19:00">2023</time>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="portfolio__col" data-cat="RETOUCH" data-modal="modal_project_3">
+                    <div class="work">
+                        <img class="work__image" src="faceless%20acne.png" alt="">
+                        <div class="work__content">
+                           <div class="work__cat">RETOUCH</div>
+                            <div class="work__title">
+                                BYE BYE IMPERFECTIONS!
+                                <time class="work__date" datetime="2022-11-22 19:00">2025</time>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="portfolio__col" data-cat="POSTERS" data-modal="modal_project_4">
+                    <div class="work">
+                        <img class="work__image" src="previewpostertrio.png" alt="">
+                        <div class="work__content">
+                           <div class="work__cat">POSTERS</div>
+                            <div class="work__title">
+                                HARMONY, BALANCE, PEACE
+                                <time class="work__date" datetime="2022-11-22 19:00">2024</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="ADVERTISEMENT"data-modal="modal_project_5">
+                    <div class="work">
+                        <img class="work__image" src="ad1.png" alt="">
+                        <div class="work__content">
+                           <div class="work__cat">ADVERTISEMENT</div>
+                            <div class="work__title">
+                                SYSTEM Montreal
+                                <time class="work__date" datetime="2022-11-22 19:00">2024</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                   <div class="portfolio__col" data-cat="ADVERTISEMENT" data-modal="modal_project_6">
+                    <div class="work">
+                        <img class="work__image" src="eastpakcover.png" alt="">
+                        <div class="work__content">
+                           <div class="work__cat">ADVERTISEMENT</div>
+                            <div class="work__title">
+                                EASTPAK
+                                <time class="work__date" datetime="2022-11-22 19:00">2023</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--PORTFOLIO-->
+            <div class="text-center">
+                <a class="pressy" id="openModal">LOAD MORE</a>
+            </div> 
+            
+        </div><!--container-->
+    </div><!--WORK-->
+    
+    
+    
+    <!--ABOUT-->
+    
+    <section class="about">
+        <div class="container">
+          
+           <div class="about__inner" id="about">
+    
+               <div class="about__content">
+                   <div class="about__title">ABOUT ME</div>
+                   <div class="about__text"><p>
+                       Hi there! I’m a Multimedia Designer from Ukraine with a serious passion for all things design. Whether it’s creating intricate clothing patterns, designing innovative industrial pieces, or crafting seamless web experiences, I love turning creative ideas into something tangible and impactful.</p>  
+
+                       <p>Design isn’t just my career—it’s my way of seeing the world. I’ve worked across a variety of fields, from fashion and branding to UI/UX and digital design, which has helped me develop a versatile skill set and a sharp eye for detail. I thrive on taking bold ideas and transforming them into solutions that are not only functional but also visually captivating.  </p>
+
+                       <p>Every project I take on is an opportunity to explore new perspectives, challenge myself, and create something that truly stands out. If you’re looking for someone who’s creative, detail-oriented, and passionate about great design, let’s connect—I’d love to collaborate!</p>
+                   </div>
+                   <div class="pressies">
+                    <a href="pdf/Roman%20Noir%20-%20Multimedia%20Designer.pdf" class="pressy pressy_pressies">RESUME</a>
+                    <a href="#" class="pressy" data-modal="modal_hire_me">HIRE</a> 
+                   </div>
+                
+                 
+               </div><!--About__CONTENT-->
+               <div class="about__photo">
+                   <img class="img" src="roman.png" alt="">
+               </div>
+           </div><!--/.about__inner -->
+            
+        </div><!--/.container -->
+    </section>
+    
+    
+    <!--REVIEWZZZZ-->
+    
+    <div class="reviews">
+        <div class="container">
+           <div class="reviews__item">
+               <div class="reviews__text">
+                   <p>"The best employee we’ve ever had. Customers would come back just to be served by him because of how amazing he was at his job. He paid attention to every detail, even the smallest orders, and handled everything perfectly—never made a single mistake, which is almost unheard of! Honestly, not hiring him would be a huge mistake."</p>
+               </div>
+               
+               <div class="reviews__author">
+                   <img class="reviews__photo" src="urbancustomz-logo.png" alt="">
+                   <div class="reviews__name">Samuel Chetrit</div>
+                   <div class="reviews__company">UrbanCustomz</div>
+               </div>
+           </div><!--reviews__item-->
+            
+        </div><!--container-->
+    </div><!--reviews-->
+    
+    <section class="news">
+        <div class="container">
+            
+            <div class="news__header" id="designservices">
+                <div class="news__title">Design Services</div>
+                <div class="news__text">Turning your unique ideas into reality with carefully crafted, one-time design solutions tailored specifically to your project's needs.Whether it’s creating something bold and eye-catching or sleek and professional, I approach every project with a fresh perspective, ensuring the final result aligns perfectly with your vision and goals.</div>
+            </div>
+        
+        
+        <div class="articles">
+            <div class="articles__col">
+                <div class="articles__item">
+                    <div class="articles__header">
+                        <img class="articles__photo" src="hello!-01-01.jpg" alt="">
+                    </div>
+                    <div class="articles__content">
+                        <div class="articles__title">
+                        <a>Creative Visuals & Branding </a></div>
+                        <div class="articles__cat">GRAPHIC DESIGN</div>
+                        <div class="articles__text"> 
+Visual design encompasses all forms of creative work that use imagery, typography, color, and layout to communicate a message. From logos and advertisements to websites and packaging, it blends art and strategy to engage audiences, enhance experiences, and convey a brand’s identity. It aims to create impactful, cohesive visuals that connect with viewers and serve specific business goals.</div>
+                    </div>
+                    <a class="pressy" href="#" data-modal="modal_hire_me">Submit Inquiry</a>
+                </div>
+            </div>
+            <div class="articles__col"><div class="articles__item">
+                    <div class="articles__header">
+                        <img class="articles__photo" src="target!-01-01.jpg" alt="">
+                    </div>
+                    <div class="articles__content">
+                        <div class="articles__title">
+                        <a>Marketing & Advertisement Design</a></div>
+                        <div class="articles__cat">MARKETING</div>
+                        <div class="articles__text"> 
+I will be creating compelling visuals and strategies that engage and persuade the target audience. It combines creative messaging, graphics, and media to effectively communicate a brand's value proposition. Together, they drive awareness, build connections, and motivate action to achieve business goals.</div>
+                    </div>
+                    <a class="pressy" href="#" data-modal="modal_hire_me">Submit Inquiry</a>
+                </div></div>
+            <div class="articles__col"><div class="articles__item">
+                    <div class="articles__header">
+                        <img class="articles__photo" src="consultation-01.jpg" alt="">
+                    </div>
+                    <div class="articles__content">
+                        <div class="articles__title">
+                        <a>Consultation & Design Strategy</a></div>
+                        <div class="articles__cat">GRAPHIC DESIGN</div>
+                        <div class="articles__text"> 
+ I offer a range of services including consultations, creative strategy development, and project management. Whether you need expert advice on branding, help refining your design direction, or guidance on a specific project, I’m here to provide tailored solutions that meet your unique needs and goals.</div>
+                    </div>
+                    <a class="pressy" href="#" data-modal="modal_hire_me">Submit Inquiry</a>
+                </div></div>
+        </div><!---ARTICLES-->
+        
+        <div class="news__footer">
+            <button class="works__nav-link" href="#" id="openModal">More services</button>
+        </div>
+        </div> <!---CONTAINER-->
+        
+    </section>
+    
+    
+    <!--FOOTER--->
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+               <div class="footer__credits">
+                   <div class="footer__copyright">
+                       &copy; 2025 Roman Noir. All designs and content are protected by copyright.
+                   </div>
+                   <div class="footer__social">
+                       <a href="https://www.behance.net/RomanChornyi" target="_blank">
+                           <img src="behance.svg" width="26" alt="">
+                       </a>
+                       <a href="https://www.instagram.com/butmynameisroman/profilecard/?igsh=MW9oamE1em01MGdwbg==" target="_blank">
+                           <img src="instagram.svg" width="24" alt="">
+                       </a>
+                   </div><!--footer__social-->
+               </div><!--footer__credits-->
+               <nav class="footer__nav">
+                <a class="footer__nav-link" href="#projects">PROJECTS</a>
+                <a class="footer__nav-link" href="#about">ABOUT ME</a>
+                <a class="footer__nav-link" href="#designservices">DESIGN SERVICES</a>
+                <a class="footer__nav-link--btn" data-modal="modal_hire_me" href="#">HIRE</a>
+            </nav>
+                
+            </div><!--footer__inner-->
+        </div><!---container--->
+    </footer>
+    
+    
+    
+    
+    <!--MODALs--> 
+    
+      <div class="modal" id="modal_project_1">
+        <div class="modal__dialog">
+          <div class="close-button" onclick="handleClose()">&times;</div>
+           <div class="modal-work">
+              <div class="modal-work__preview">
+                 <div data-slider="slick">
+                     <div>
+                          <img class="modal-work__photo" src="weekend.png" alt="">
+                     </div>
+                      <div>
+                          <img class="modal-work__photo" src="drake.png" alt="">
+                     </div>
+                      <div>
+                          <img class="modal-work__photo" src="savage.png" alt="">
+                     </div>
+                 </div>
+              </div>
+              <div class="modal-work__content">
+                
+                 <div class="modal-work__header">
+                     <div class="modal-work__title">BEST SELLERS</div>
+                     <div class="modal-work__info">Posters <span class="modal-work__info-divider">|</span> 2024</div>
+                 </div>
+                 
+                 <div class="modal-work__client">
+                     <div class="modal-work__client-title">Roman Noir</div>
+                     <div class="modal-work__client-company">UrbanCustomz</div>
+                 </div>
+                 
+                 <div class="modal-work__text">
+                     <p>Weekend After Hours – Featuring the signature red design, this poster became a standout piece across Canada, selling over 500 times. The bold color scheme and dynamic composition reflect the energy and vibe of the artist’s iconic album, making it a must-have for fans.
+                     </p>
+                     <p>Drake – Platinum Record – Celebrating the global superstar, this poster showcases Drake's multiple albums alongside a platinum record disc. With its striking design, this piece sold 150 times, resonating with Drake's dedicated fanbase and music enthusiasts alike.
+                     </p>
+                     <p>21 Savage – American Dream – A dramatic poster featuring 21 Savage, encapsulating the dark, gritty vibe of the "American Dream." With elements like a pistol, fingerprints, and blurred documents, it’s a compelling visual statement. This design sold 200 times, connecting with fans of the artist and the genre’s raw narrative.
+                     </p>
+                 </div>
+                 
+                 <div class="modal-work__footer">
+                     <button class="modal-work__btn modal-work__btn--prev slickPrev" type="button">Previous</button>
+                     <button class="modal-work__btn modal-work__btn--next slickNext" type="button">Next</button>
+                 </div>
+                 
+              </div><!--modal-work__content-->
+               
+           </div><!---modal-work--->
+            
+        </div> <!--modal__DIALOG-->
+    </div><!--Modal-->
+    
+     
+    
+    
+    <div class="modal" id="modal_project_2">
+        <div class="modal__dialog">
+          <div class="close-button" onclick="handleClose()">&times;</div>
+           <div class="modal-work">
+              <div class="modal-work__preview">
+                 <div data-slider="slick">
+                     <div>
+                          <img class="modal-work__photo" src="drm1.png" alt="">
+                     </div>
+                     <div>
+                          <img class="modal-work__photo" src="drm2.png" alt="">
+                     </div>
+                     <div>
+                          <img class="modal-work__photo" src="drm3.png" alt="">
+                     </div>
+                 </div>
+              </div>
+              <div class="modal-work__content">
+                
+                 <div class="modal-work__header">
+                     <div class="modal-work__title">Dr.Martens</div>
+                     <div class="modal-work__info">Advertisement<span class="modal-work__info-divider">|</span> 2024</div>
+                 </div>
+                 
+                 <div class="modal-work__client">
+                     <div class="modal-work__client-title">Roman Noir</div>
+                     <div class="modal-work__client-company"></div>
+                 </div>
+                 
+                 <div class="modal-work__text">
+                     <p>This advertising series was designed to embody the rebellious spirit and timeless appeal of Dr. Martens. Featuring a striking yellow-highlighted shoe against a bold black background with crisp white typography, each ad delivers a powerful message:
+                     </p>
+                     <p>"Rebel with Style" – Showcasing the signature aesthetic of Dr. Martens, this ad highlights how the brand’s iconic design fuses individuality with fashion-forward style.
+                     </p>
+                     <p>"Find Your Footing" – A tribute to the legendary soles, emphasizing their durability, traction, and grip, making every step firm and confident.
+                     </p>
+                     <p>
+                         "Comfort Never Compromised" – Focused on the brand’s commitment to all-day comfort, ensuring that toughness and style never come at the expense of wearability.
+                     </p>
+                 </div>
+                 
+                 <div class="modal-work__footer">
+                     <button class="modal-work__btn modal-work__btn--prev slickPrev" type="button">Previous</button>
+                     <button class="modal-work__btn modal-work__btn--next slickNext" type="button">Next</button>
+                 </div>
+                 
+              </div><!--modal-work__content-->
+               
+           </div><!---modal-work--->
+            
+        </div> <!--modal__DIALOG-->
+    </div><!--Modal-->
+    
+
+    
+    <div class="modal" id="modal_project_3">
+        <div class="modal__dialog">
+          <div class="close-button" onclick="handleClose()">&times;</div>
+           <div class="modal-work">
+              <div class="modal-work__preview">
+                 <div data-slider="slick">
+                     <div>
+                          <img class="modal-work__photo" src="before%203.png" alt="">
+                     </div>
+                     <div>
+                          <img class="modal-work__photo" src="after%203.png" alt="">
+                     </div>
+                     <div>
+                          <img class="modal-work__photo" src="before1.png" alt="">
+                     </div>
+                     <div>
+                          <img class="modal-work__photo" src="after%201.png" alt="">
+                     </div>
+                 </div>
+              </div>
+              <div class="modal-work__content">
+                
+                 <div class="modal-work__header">
+                     <div class="modal-work__title">BYE BYE IMPERFECTIONS!</div>
+                     <div class="modal-work__info">Retouch <span class="modal-work__info-divider">|</span> 2025</div>
+                 </div>
+                 
+                 <div class="modal-work__client">
+                     <div class="modal-work__client-title">Roman Noir</div>
+                     <div class="modal-work__client-company"></div>
+                 </div>
+                 
+                 <div class="modal-work__text">
+                     <p>I specialize in high-quality skin retouching, focusing on acne removal, blemish correction, and overall skin refinement while preserving natural texture. My approach is tailored to the specific needs of each photo, whether for personal portraits, beauty campaigns, or professional branding.
+                     </p>
+                     <p>For acne and blemish removal, I use Adobe Photoshop’s Healing Brush, Clone Stamp, and Frequency Separation techniques, carefully eliminating imperfections while maintaining realistic skin details.
+                     </p>
+                     <p>For skin tone correction and evening out discoloration, I apply Dodge & Burn and selective color adjustments in Camera Raw and Photoshop, ensuring a smooth yet natural complexion.
+                     </p>
+                      <p>For final refinements, I manually adjust sharpness, contrast, and lighting to enhance the overall image quality while keeping it true to life.
+
+Each retouch is adapted to the intended use of the image, whether for social media, beauty portfolios, or commercial purposes, ensuring a polished and professional result without an over-processed look.
+                     </p>
+                 </div>
+                 
+                 <div class="modal-work__footer">
+                     <button class="modal-work__btn modal-work__btn--prev slickPrev" type="button">Previous</button>
+                     <button class="modal-work__btn modal-work__btn--next slickNext" type="button">Next</button>
+                 </div>
+                 
+              </div><!--modal-work__content-->
+               
+           </div><!---modal-work--->
+            
+        </div> <!--modal__DIALOG-->
+    </div><!--Modal-->
+    
+    
+    <div class="modal" id="modal_project_4">
+        <div class="modal__dialog">
+          <div class="close-button" onclick="handleClose()">&times;</div>
+           <div class="modal-work">
+              <div class="modal-work__preview">
+                 <div data-slider="slick">
+                     <div>
+                          <img class="modal-work__photo" src="poster1.png" alt="">
+                     </div>
+                     <div>
+                          <img class="modal-work__photo" src="poster2.png" alt="">
+                     </div>
+                      <div>
+                          <img class="modal-work__photo" src="poster3.png" alt="">
+                     </div>
+                 </div>
+              </div>
+              <div class="modal-work__content">
+                
+                 <div class="modal-work__header">
+                     <div class="modal-work__title">HARMONY, BALANCE, PEACE</div>
+                     <div class="modal-work__info">Posters <span class="modal-work__info-divider">|</span> 2024</div>
+                 </div>
+                 
+                 <div class="modal-work__client">
+                     <div class="modal-work__client-title">Roman Noir</div>
+                     <div class="modal-work__client-company">UrbanCustomz</div>
+                 </div>
+                 
+                 <div class="modal-work__text">
+                     <p>This trio of posters, titled Harmony, Balance, and Peace, was created for Urban Customs as a unique collection designed to evoke a sense of tranquility and well-being. The posters are meant to complement each other as a cohesive set, with each piece representing a core element of mindfulness.
+                     </p>
+                     <p>They became a popular product, selling many times as a set of three frames. I was the first to introduce the concept of a "trio-posters" collection, setting a trend within the brand's offerings.
+                     </p>
+                     <p>This collection highlights my ability to create visually harmonious designs that work both individually and together, showcasing my expertise in color theory, typography, and conceptual design.
+                     </p>
+                 </div>
+                 
+                 <div class="modal-work__footer">
+                     <button class="modal-work__btn modal-work__btn--prev slickPrev" type="button">Previous</button>
+                     <button class="modal-work__btn modal-work__btn--next slickNext" type="button">Next</button>
+                 </div>
+                 
+              </div><!--modal-work__content-->
+               
+           </div><!---modal-work--->
+            
+        </div> <!--modal__DIALOG-->
+    </div><!--Modal-->
+    
+    
+   <div class="modal" id="modal_project_5">
+        <div class="modal__dialog">
+          <div class="close-button" onclick="handleClose()">&times;</div>
+           <div class="modal-work">
+              <div class="modal-work__preview">
+                 <div data-slider="slick">
+                     <div>
+                          <img class="modal-work__photo" src="ad2.png" alt="">
+                     </div>
+                 </div>
+              </div>
+              <div class="modal-work__content">
+                
+                 <div class="modal-work__header">
+                     <div class="modal-work__title">SYSTEM MONTREAL</div>
+                     <div class="modal-work__info">Advertisement <span class="modal-work__info-divider">|</span> 2024</div>
+                 </div>
+                 
+                 <div class="modal-work__client">
+                     <div class="modal-work__client-title">Roman Noir</div>
+                     <div class="modal-work__client-company">Oleg Bondarenko</div>
+                 </div>
+                 
+                 <div class="modal-work__text">
+                     <p>For this underground rave event in Montreal, I was tasked with creating a visually striking advertisement to capture the attention of the local party scene. The design aimed to reflect the energy and unique vibe of the event, using bold visuals and dynamic elements to create a sense of excitement and anticipation. The final result was a piece that resonated strongly with the target audience, helping to bring in 240 attendees.
+                     </p>
+                     <p>The success of this advertisement highlights my ability to craft compelling visual narratives that effectively communicate the spirit of an event and draw people in. The design is a blend of modern, edgy aesthetics and the pulse of underground culture, making it a standout piece for the event.
+                     </p>
+                 </div>
+                 
+                 <div class="modal-work__footer">
+                     <button class="modal-work__btn modal-work__btn--prev slickPrev" type="button">Previous</button>
+                     <button class="modal-work__btn modal-work__btn--next slickNext" type="button">Next</button>
+                 </div>
+                 
+              </div><!--modal-work__content-->
+               
+           </div><!---modal-work--->
+            
+        </div> <!--modal__DIALOG-->
+    </div><!--Modal-->
+    
+    
+    <div class="modal" id="modal_project_6">
+        <div class="modal__dialog">
+          <div class="close-button" onclick="handleClose()">&times;</div>
+           <div class="modal-work">
+              <div class="modal-work__preview">
+                 <div data-slider="slick">
+                     <div>
+                          <img class="modal-work__photo" src="eastpak1.png" alt="">
+                     </div>
+                     <div>
+                          <img class="modal-work__photo" src="eastpak2.png" alt="">
+                     </div>
+                     <div>
+                          <img class="modal-work__photo" src="eastpak3.png" alt="">
+                     </div>
+                 </div>
+              </div>
+              <div class="modal-work__content">
+                
+                 <div class="modal-work__header">
+                     <div class="modal-work__title">Eastpak</div>
+                     <div class="modal-work__info">Advertisement <span class="modal-work__info-divider">|</span> 2023</div>
+                 </div>
+                 
+                 <div class="modal-work__client">
+                     <div class="modal-work__client-title">Roman Noir</div>
+                     <div class="modal-work__client-company">Eastpak Retail Store</div>
+                 </div>
+                 
+                 <div class="modal-work__text">
+                     <p>"Built To Resist"
+featuring a striking red backpack, this design highlights its water-resistant properties, ensuring durability in any weather. The visual composition reinforces Eastpak’s commitment to adventure-ready gear.
+                     </p>
+                     <p>"Built To Last" focused on the backpack’s handles, this banner emphasizes the reinforced straps and high-quality stitching, designed for long-lasting performance. The bold design conveys reliability and comfort, making it an essential everyday carry.
+                     </p>
+                     <p>"Built To Be Best"
+                     Showcasing the backpack’s interior, this banner highlights the premium YKK lock system, reinforcing Eastpak’s dedication to security and quality craftsmanship. The design communicates why Eastpak backpacks stand out in the market.
+                     </p>
+                 </div>
+                 
+                 <div class="modal-work__footer">
+                     <button class="modal-work__btn modal-work__btn--prev slickPrev" type="button">Previous</button>
+                     <button class="modal-work__btn modal-work__btn--next slickNext" type="button">Next</button>
+                 </div>
+                 
+              </div><!--modal-work__content-->
+               
+           </div><!---modal-work--->
+            
+        </div> <!--modal__DIALOG-->
+    </div><!--Modal-->
+    
+<div class="modal" id="modal_hire_me">
+    <div class="modal__dialog modal__dialog--sm">
+        <div class="close-button" onclick="handleClose()">&times;</div>
+
+        <div class="contact">
+            <div class="contact__left">
+                <div class="modal__title">CONTACT</div>
+                <div class="modal__subtitle">CONNECT WITH ME VIA:</div>
+
+                <div class="contact__info">
+                    <div class="contact__info-phone">Phone: +1(514)-965-1889</div>
+                    <div class="contact__info-email">Email: romannoirofficial@gmail.com</div>
+                </div>
+
+                <!-- Formspree URL updated -->
+                <form action="https://formspree.io/f/xleyywpa" method="POST">
+                    <div class="form__group">
+                        <label for="input-email" class="form__label">YOUR EMAIL</label>
+                        <input type="text" class="form__input" name="input-email" id="input-email" placeholder="Email address" required>
+                    </div>
+
+                    <!-- Dropdown for Inquiry Type -->
+                    <div class="form__group dropdown">
+                        <label class="form__label">SELECT INQUIRY</label>
+                        <button type="button" class="dropdown-button" onclick="toggleDropdown()">Choose an option</button>
+                        <div id="dropdown-menu" class="dropdown-content">
+                            <div class="dropdown-item" onclick="selectOption('Creative Visuals & Branding')">Creative Visuals & Branding</div>
+                            <div class="dropdown-item" onclick="selectOption('Marketing & Advertisement Design')">Marketing & Advertisement Design</div>
+                            <div class="dropdown-item" onclick="selectOption('Consultation & Design Strategy')">Consultation & Design Strategy</div>
+                            <div class="dropdown-item" onclick="selectOption('Other')">Other</div>
+                        </div>
+                        <input type="hidden" name="inquiry-type" id="selected-inquiry">
+                    </div>
+
+                    <!-- Text input for "Other" Inquiry -->
+                    <div class="form__group" id="other-inquiry-group" style="display: none;">
+                        <label for="other-inquiry" class="form__label">SPECIFY YOUR INQUIRY</label>
+                        <input type="text" class="form__input" name="other-inquiry" id="other-inquiry" placeholder="Describe your request">
+                    </div>
+
+                    <div class="form__group">
+                        <label for="input-text" class="form__label">YOUR REQUEST</label>
+                        <textarea class="form__textarea" name="text" id="input-text" placeholder="Text here" required></textarea>
+                    </div>
+
+                    <!-- Submit button with the pressy class -->
+                    <div class="text-right">
+                        <button type="submit" class="submit-button pressy">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="contact__right">
+                <div class="contact__right-text">Roman Noir</div>
+            </div>
+        </div>
+    </div> <!-- modal__DIALOG -->
+</div><!-- Modal -->
+
+
+
+<div id="myModal" class="custom-modal">
+  <div class="custom-modal__dialog">
+    <span class="custom-modal__close">&times;</span>
+    <p class="custom-modal__text">Nothing has been added yet.</p>
+  </div>
+</div>
+
+
+
+    
+    
+    
+    
+    <!---JS--->
+    <script src="js/slick.min.js"></script>
+    <script src="js/app.js"></script>
+    
+    
+</body>
+</html>

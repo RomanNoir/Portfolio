@@ -1,0 +1,69 @@
+// compress: true
+
+
+@import "vars";
+
+html {
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: "Space Mono", serif;
+    font-size: 1rem;
+    color: black;
+    overflow: auto;
+}
+    
+    &.no-scroll {
+    overflow: hidden; /* Prevent background scrolling when modal is open */
+    transition: padding-right 0.3s ease-in-out; 
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+   margin: 0 !important;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* VENDOR */
+@import "vendor/slick";
+
+
+/* Blocks */
+
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/user";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/works";
+@import "blocks/portfolio";
+@import "blocks/work";
+@import "blocks/helpers";
+@import "blocks/about";
+@import "blocks/reviews";
+@import "blocks/news";
+@import "blocks/articles";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/modal-work";
+@import "blocks/contact";
+@import "blocks/form";
+@import "blocks/custom-modal";
+
+@import "blocks/burger";
+@import "blocks/dropdown";
+
+
+

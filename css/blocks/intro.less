@@ -1,0 +1,73 @@
+// main: ../style.less
+
+.intro {
+    @media @mobile {
+        margin-top: 7rem ;
+    }
+}
+
+.intro__inner {
+    display: block;
+    
+}
+
+.intro__content {
+    margin-top: 4.4rem;
+    width: 100%;
+    line-height: 13.5rem;
+    
+    @media @mobile {
+        margin-top: 1rem;
+    }
+}
+
+
+.intro__subtitle {
+    font-size: 12rem;
+    text-align: center;
+    color: @black;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+    
+    @media @tablet {
+        font-size: 6rem;
+        line-height: 1.3;
+    }
+    
+        @media @mobile {
+        font-size: 3.9rem;
+        line-height: 1.2;
+    }
+    
+    &:hover {
+            background-color: @black;
+            color: @white;
+    }
+    }
+
+.intro__title {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 100;
+    
+    @media @mobile {
+        font-size: .8rem;
+        line-height: 1.8;
+        margin-top: 2rem !important;
+    }
+}
+
+.intro__resume {
+    cursor: pointer;
+    text-decoration: none;
+    color:@black;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+    &:hover {
+        color: @white;
+    }
+    
+}
+.thin-italic {
+    font-style: italic;
+    font-weight: 100;
+    color: @black;
+}

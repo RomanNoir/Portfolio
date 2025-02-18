@@ -1,0 +1,66 @@
+// main: ../style.less
+
+.contact {
+    display: flex;
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+}
+
+.contact__left {
+    border: 2px solid @black;
+    width: 47%;
+    padding: 2rem;
+}
+
+.contact__right {
+    width: 53%;
+    display: flex;
+    background: @black;
+    color: @white;
+    font-size: 6rem;
+    background-size: cover;
+    background-position: center;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    &:hover {
+        color: @black;
+        background: @white;
+        background-image: none;
+    }
+}
+
+.contact__right-text {
+    margin: auto;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.contact__info {
+    font-weight: 300;
+    margin: 2rem 0 3rem;
+    padding: 0;
+    list-style: none;
+}
+
+.contact__info-phone {
+    margin-bottom: .5rem;
+}
+
+.contact__info-email {
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column; /* Stack the sections vertically */
+    }
+
+    .contact__left {
+        width: 100%; /* Full width for mobile */
+        padding: 1.5rem; /* Adjust padding */
+    }
+
+    .contact__right {
+        display: none; /* Hide the right section for mobile */
+    }
+}

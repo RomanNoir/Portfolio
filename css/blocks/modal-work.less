@@ -1,0 +1,171 @@
+// main: ../style.less
+
+.modal-work {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .modal-work {
+        flex-direction: column; /* Stack preview and content vertically */
+    }
+}
+
+.modal-work__preview {
+    width: 100%; /* Ensure full width */
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .modal-work__preview {
+        width: 100%; /* Take full width on mobile */
+        height: auto; /* Allow content to adapt */
+    }
+}
+
+.modal-work__photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+    width: 100%; /* Ensure it takes up full width */
+    height: 100%; /* Fill the container height */
+    object-fit: cover; /* Ensure the image covers the container, preserving aspect ratio */
+    max-width: none; /* Ensure width doesn't restrict scaling */
+}
+
+@media (max-width: 768px) {
+    .modal-work__photo {
+        position: static; /* Remove absolute positioning for mobile */
+        transform: none; /* No transform needed */
+        width: 100%; /* Ensure full width on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 70vh; /* Optional: Limit height for smaller screens */
+        object-fit: contain; /* Keep aspect ratio for mobile */
+    }
+}
+
+.modal-work__content {
+    border: 2px solid @black;
+    width: 35%;
+    padding: 3rem 3rem 1rem 2rem;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .modal-work__content {
+        width: 100%; /* Full width */
+        padding: 1rem; /* Reduce padding for smaller screens */
+        border-top: none; /* Optional: Remove border overlap */
+    }
+}
+
+.modal-work__header {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .modal-work__header {
+        margin-bottom: 1rem; /* Adjust spacing */
+        text-align: center; /* Center align for smaller devices */
+    }
+}
+
+.modal-work__title {
+    font-size: 2rem;
+    margin-bottom: .2rem;
+    color: @black;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .modal-work__title {
+        font-size: 1.5rem; /* Adjust font size */
+        margin-bottom: 0.5rem; /* Reduce spacing */
+    }
+}
+
+.modal-work__info {
+    font-size: 1rem;
+    color: @gray;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .modal-work__info {
+        font-size: 0.9rem; /* Slightly smaller font */
+        text-align: center; /* Center align */
+    }
+}
+
+.modal-work__client {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .modal-work__client {
+        margin-bottom: 1rem; /* Adjust spacing */
+        text-align: center; /* Center align client info */
+    }
+}
+
+.modal-work__text {
+    margin-bottom: 7rem;
+    font-size: 0.84rem;
+    color: @gray;
+    line-height: 2;
+    font-weight: 300;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .modal-work__text {
+        margin-bottom: 1rem; /* Reduce spacing */
+        font-size: 0.8rem; /* Adjust font size */
+        text-align: justify; /* Optional: Justify text */
+    }
+}
+
+.modal-work__footer {
+    width: 100%;
+    padding: 0 1rem 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .modal-work__footer {
+        flex-direction: column; /* Stack buttons vertically */
+        position: static; /* Remove absolute positioning */
+        padding: 1rem 0; /* Adjust padding */
+        text-align: center; /* Center align footer content */
+    }
+}
+
+.modal-work__btn {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    color: @black;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: none;
+    border: 0;
+    padding: 0;
+    transition: text-decoration .3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .modal-work__btn {
+        display: none;
+        font-size: 0.9rem; /* Adjust font size */
+        margin: 0.5rem 0; /* Add vertical spacing for stacked buttons */
+    }
+}
